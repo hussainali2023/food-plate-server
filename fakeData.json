@@ -1,0 +1,44 @@
+[
+  {
+    "foodName": "Biryani",
+    "foodPhoto": "https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "foodRating": 4,
+    "foodDescription": "This mixed rice dish has its origins amidst the Muslims of the Indian subcontinent. It is prepared by mixing a curry, later combining it with semi-cooked rice separately. This dish is especially popular throughout the Indian subcontinent, as well as among the diaspora from the region. The presence of this rich and aromatic rice dish in the menu surely takes the dinner parties a notch higher. ",
+    "foodPrice": 199
+  },
+  {
+    "foodName": "Kebab",
+    "foodPhoto": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    "foodRating": 3,
+    "foodDescription": "A dish popular across the Middle East, Kebabs are originally from Turkey. They consist of ground meat or seafood, fruits, and vegetables in some cases and are cooked on a skewer with a big fire underneath, just like a barbeque on the grill. It is cooked with various accompanying ingredients including garlic, black pepper, and vegetable oil. Mutton or lambs are generally the traditional meats used in kebabs. Other recipes include beef, goat, fish, and chicken as well. This dish has a perfect blend of taste, ranging from tangy to spicy, making it one of the best dishes in the world.",
+    "foodPrice": 399
+  },
+  {
+    "foodName": "Poutine",
+    "foodPhoto": "https://www.holidify.com/images/cmsuploads/compressed/1200px-Food_at_WIkimanian_2017_02_20200402121459.jpg",
+    "foodRating": 5,
+    "foodDescription": "All the french-fries lovers in the house, this Canadian dish is what you need to get your hands on. Poutine includes french fries and cheese curds topped with traditional brown chicken gravy. Originated in the late 1950s in the central province of Canada, the hot gravy is usually served at room temperatures and t maintain the texture, the fries are added right before serving the dish. ",
+    "foodPrice": 299
+  },
+  {
+    "foodName": "Sushi",
+    "foodPhoto": "https://www.holidify.com/images/cmsuploads/compressed/c700x420_20181227132950.jpg",
+    "foodRating": 4,
+    "foodDescription": "Prepared with vinegared rice and a wide range of ingredients including seafood, vegetables, and sometimes fruits. Sushi tastes best when served with wasabi, pickled ginger, and soy sauce. A popular garnish for this dish is Daikon radish. The type of fish in it defines a sushi's taste. However, the vinegared rice gives the dish a tangy taste overall. Tuna, eel, and Salmon tend to have a light flavour while octopus flavoured sushi is generally strong in taste.",
+    "foodPrice": 499
+  },
+  {
+    "foodName": "Rendang",
+    "foodPhoto": "https://www.holidify.com/images/cmsuploads/compressed/8896564-16x9-large_20181227133052.jpg",
+    "foodRating": 3,
+    "foodDescription": "Often called the world's most delicious dish, Rendang is prepared by simmering beef with coconut milk with a mixture of the best of spices including turmeric, garlic, lemongrass, ginger, chillies, and galangal. The dish is then stewed for a few hours which gives it a tender texture and exotic taste. The blast of flavours is surely one of the reasons why the dish is loved globally and is also one of the best dishes in the world. Easy to rustle up, this dish is often served at ceremonies or to honour guests.",
+    "foodPrice": 299
+  },
+  {
+    "foodName": "Dosa",
+    "foodPhoto": "https://www.holidify.com/images/cmsuploads/compressed/Featured-image-masala-dosa-recipe_20181227134705.jpg",
+    "foodRating": 5,
+    "foodDescription": "India has a lot to contribute when it comes to cuisine and dosa is the best dish to represent that. To put it in simple terms, dosa is a type of pancake made from fermented rice batter. The dish looks like a crepe and the main ingredients are black gram and rice. Earlier, Dosa was prominent only in South India and Sri Lanka. It is now a well-known dish in India and all over the world. It is usually filled with various stuffings with potato being the main ingredient for the stuffing. Dosa is served along with chutneys and sambar (vegetable stew)",
+    "foodPrice": 99
+  }
+]
