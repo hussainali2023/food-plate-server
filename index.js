@@ -22,6 +22,8 @@ async function run() {
       .db("food-plate")
       .collection("foodsCollection");
 
+    const reviewCollection = client.db("food-plate").collection("reviews");
+
     app.get("/foods", async (req, res) => {
       const query = {};
       const foods = await foodCollection.find(query).toArray();
@@ -32,6 +34,13 @@ async function run() {
       const query = { _id: new ObjectId(id) };
       const food = await foodCollection.findOne(query);
       res.send(food);
+    });
+
+    app.post("/reviews", async (req, res) => {
+      const reviews = req.body;
+      console.log(reviews);
+      const result = await reviewCollection.insertOne(reviews);
+      res.send(reviews);
     });
   } catch (data) {
     console.log(data);
