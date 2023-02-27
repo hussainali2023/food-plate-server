@@ -30,6 +30,12 @@ async function run() {
       const foods = await foodCollection.find(query).toArray();
       res.send(foods);
     });
+    app.post("/foods", async (req, res) => {
+      const foods = req.body;
+
+      const result = await foodCollection.insertOne(foods);
+      res.send(result);
+    });
     app.get("/foods/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
@@ -49,7 +55,15 @@ async function run() {
       const reviews = await reviewCollection.find(query).toArray();
       res.send(reviews);
     });
-    app.get("/reviews/:email", async (req, res) => {
+
+    app.get("/reviews/foods/:foodName", async (req, res) => {
+      const foodName = req.params.foodName;
+      const email = req.params.email;
+      const query = { foodName: foodName };
+      const reviews = await reviewCollection.find(query).toArray();
+      res.send(reviews);
+    });
+    app.get("/reviews/user/:email", async (req, res) => {
       const email = req.params.email;
       const query = { email: email };
       const reviews = await reviewCollection.find(query).toArray();
