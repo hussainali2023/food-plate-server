@@ -15,6 +15,7 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true,
   serverApi: ServerApiVersion.v1,
 });
+console.log(uri);
 
 async function run() {
   try {
@@ -40,6 +41,11 @@ async function run() {
       const reviews = req.body;
       console.log(reviews);
       const result = await reviewCollection.insertOne(reviews);
+      res.send(reviews);
+    });
+    app.get("/reviews", async (req, res) => {
+      const query = {};
+      const reviews = await reviewCollection.find(query).toArray();
       res.send(reviews);
     });
   } catch (data) {
