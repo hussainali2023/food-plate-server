@@ -30,12 +30,39 @@ async function run() {
       const foods = await foodCollection.find(query).toArray();
       res.send(foods);
     });
+
+    app.get("/foods/foodType", async (req, res) => {
+      const query = {};
+      const foods = await foodCollection
+        .find(query, { projection: { foodType: 1, _id: 0 } })
+        .toArray();
+      res.send(foods);
+    });
+
+    app.get("/foods/indian", async (req, res) => {
+      const query = { foodType: "indian" };
+      const indianFoods = await foodCollection.find(query).toArray();
+      res.send(indianFoods);
+    });
+    app.get("/foods/italian", async (req, res) => {
+      const query = { foodType: "italian" };
+      const italianFoods = await foodCollection.find(query).toArray();
+      res.send(italianFoods);
+    });
+
+    app.get("/foods/american", async (req, res) => {
+      const query = { foodType: "american" };
+      const americanFoods = await foodCollection.find(query).toArray();
+      res.send(americanFoods);
+    });
+
     app.post("/foods", async (req, res) => {
       const foods = req.body;
 
       const result = await foodCollection.insertOne(foods);
       res.send(result);
     });
+
     app.get("/foods/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
