@@ -55,6 +55,11 @@ async function run() {
       const americanFoods = await foodCollection.find(query).toArray();
       res.send(americanFoods);
     });
+    app.get("/foods/chinese", async (req, res) => {
+      const query = { foodType: "chinese" };
+      const americanFoods = await foodCollection.find(query).toArray();
+      res.send(americanFoods);
+    });
 
     app.post("/foods", async (req, res) => {
       const foods = req.body;
